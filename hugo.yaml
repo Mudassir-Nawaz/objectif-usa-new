@@ -21,7 +21,9 @@ menus:
       identifier: articles
       weight: 40
 
-
+caches:
+  images:
+    dir: :cacheDir/images
 
 build:
   buildStats:
