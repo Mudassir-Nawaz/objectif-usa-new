@@ -1,0 +1,21 @@
+<footer class="bg-blue pt-10 lg:pt-20">
+    <div class="container mx-auto grid grid-cols-1 md:grid-col-2 lg:grid-cols-3 gap-10">
+        <div class="space-y-5">
+            <h3 class="text-xl font-semibold font-montserrat text-white max-w-xs capitalize">Certified Business Intermediary by IBBA</h3>
+            <a href="">
+                <img src="{{ "images/white-cbi-logo.png" | relURL }}" alt="" class="size-20">
+            </a>
+        </div>
+        <nav class="space-y-5">
+            <h3 class="text-xl font-semibold font-montserrat text-white max-w-xs capitalize">liens rapides</h3>
+            <ul class="space-y-3">
+                {{ range site.Menus.main }}
+                <li><a href="{{ .URL }}" class="text-white font-roboto hover:text-red transition-colors duration-500 capitalize">{{ .Title }}</a></li>
+                {{ end }}
+            </ul>
+        </nav>
+        <div class="md:col-span-2 lg:col-span-3 py-5 border-t border-white/10 text-center">
+            <span class="font-roboto text-white uppercase">Copyright&copy; 2026 Objectif USA</span>
+        </div>
+    </div>
+</footer>

@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+@source "hugo_stats.json";
+
+@theme {
+    --font-roboto: "Roboto", sans-serif;
+    --font-montserrat: "Montserrat", sans-serif;
+
+    --color-blue: #243850;
+    --color-red: #DF2636;
+    --color-gray: var(--color-gray-500);
+    --color-sky: #C5DFF4;
+}
