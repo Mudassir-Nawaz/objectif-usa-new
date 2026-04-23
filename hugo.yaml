@@ -8,18 +8,20 @@ menus:
       pageRef: "/"
       identifier: home
       weight: 10
-    - title: "à propos"
-      pageRef: "/about/"
-      identifier: about
+    - title: "Le livre"
+      pageRef: "/book/"
+      identifier: le-livre
       weight: 20
-    - title: "services"
-      pageRef: "/services/"
-      identifier: services
+    - title: "Rezoway"
+      pageRef: "/rezoway/"
+      identifier: rzoway
       weight: 30
-    - title: "Articles"
-      pageRef: "/articles/"
-      identifier: articles
-      weight: 40
+
+params:
+  socials:
+    facebook: "https://facebook.com"
+    linkedin: "https://linkedin.com"
+   
 
 caches:
   images:

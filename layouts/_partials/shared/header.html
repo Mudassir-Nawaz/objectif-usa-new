@@ -7,7 +7,7 @@
         <button class="md:hidden">
             <i class="fa-solid fa-bars text-3xl text-gray"></i>
         </button>
-        <nav class="absolute translate-x-full md:translate-x-0 transition-transform duration-500 md:static bg-white md:bg-transparent shadow-2xl md:shadow-none md:bg-none right-0 top-0 px-5 md:px-0 w-2/3 h-screen md:h-auto md:flex md:justify-between">
+        <nav class="absolute translate-x-full md:translate-x-0 transition-transform duration-500 md:static bg-white md:bg-transparent shadow-2xl md:shadow-none md:bg-none right-0 top-0 px-5 md:px-0 w-2/3 h-screen md:h-auto md:flex md:justify-between md:items-center">
             <button class="float-right pt-5 md:hidden">
                 <i class="fa-solid fa-xmark text-3xl text-gray"></i>
             </button>
@@ -25,8 +25,17 @@
                 {{ end }}
             </ul>
             {{ end }}
-            <div class="flex justify-stretch md:justify-center items-center mt-15 md:mt-0">
-                {{ partial "shared/button.html" (dict "url" "/contact/" "label" "Contact") }}
+            <div class="flex justify-center md:justify-center items-center mt-15 md:mt-0 gap-5">
+                {{ with site.Params.socials.facebook }}
+                <a href="{{ . }}" target="_blank">
+                    <i class="fa-brands fa-square-facebook text-2xl text-gray hover:text-red transition-colors duration-500"></i>
+                </a>
+                {{ end }}
+                {{ with site.Params.socials.linkedin }}
+                <a href="{{ . }}" target="_blank">
+                    <i class="fa-brands fa-square-linkedin text-2xl text-gray hover:text-red transition-colors duration-500"></i>
+                </a>
+                {{ end }}
             </div>
         </nav>
     </div>
