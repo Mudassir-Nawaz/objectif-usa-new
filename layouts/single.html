@@ -1,0 +1,11 @@
+{{ define "main" }}
+    <section class="">
+        <div class="container mx-auto py-30 lg:px-5 lg:pt-40 lg:pb-30 px-5">
+            <article class="prose font-roboto prose-a:text-red prose-headings:text-blue prose-lg max-w-4xl prose-headings:font-montserrat prose-img:size-full prose-img:object-cover">
+                <h1 class="text-blue font-montserrat text-4xl lg:text-5xl leading-snug font-bold uppercase mb-10">{{ .Title }}</h1>
+                <time class="text-red"><span class="capitalize">dernière mise à jour:</span> {{ .Date | time.Format ":date_long"}}</time>
+                {{ .Content }}
+            </article>
+        </div>
+    </section>
+{{ end }}
